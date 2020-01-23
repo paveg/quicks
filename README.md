@@ -1,24 +1,13 @@
-# README
+# Quicks
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repository is a quick starting web application which composed Rails API server + React (Re-ducks). 
 
-Things you may want to cover:
+## Quick Start
 
-* Ruby version
+```bash
+$ docker-compose build
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# app database creation
+$ docker-compose run --rm rails rake db:create
+$ docker-compose up 
+```
