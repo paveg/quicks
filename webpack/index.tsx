@@ -1,7 +1,8 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
+import App from "../front/javascripts/root/index/entry";
 
 ReactDOM.render(
-    <div>Hello world</div>,
+    <App/>,
     document.getElementById('root')
 )

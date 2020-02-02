@@ -21,7 +21,7 @@ require 'rails/test_unit/railtie'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module SampleApi
+module Quicks
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
@@ -35,5 +35,13 @@ module SampleApi
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins 'http://localhost:3001'
+        resource '*',
+                 headers: :any,
+                 methods: %i[get post patch delete options]
+      end
+    end
   end
 end
