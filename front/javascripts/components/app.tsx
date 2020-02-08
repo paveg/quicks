@@ -1,6 +1,6 @@
 import React from 'react'
 
-function MainContainer(): JSX.Element {
+function App(): JSX.Element {
     return (
         <div className="main-container">
             <h1>Main Container</h1>
@@ -8,4 +8,4 @@ function MainContainer(): JSX.Element {
     )
 }
 
-export default MainContainer
+export default App

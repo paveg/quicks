@@ -1,8 +1,8 @@
 import React from 'react'
-import MainContainer from '../../components/main_container'
+import ReactDOM from 'react-dom'
+import App from '../../components/app'
 
-function App() {
-    return <MainContainer />
-}
-
-export default App
+ReactDOM.render(
+    <App/>,
+    document.getElementById('root')
+)
