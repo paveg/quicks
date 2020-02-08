@@ -1,8 +1,6 @@
-import React from 'react';
-import axios from 'axios';
+import React from 'react'
 
 function MainContainer(): JSX.Element {
-    console.log('from main_container!')
     return (
         <div className="main-container">
             <h1>Main Container</h1>
@@ -10,4 +8,4 @@ function MainContainer(): JSX.Element {
     )
 }
 
-export default MainContainer;
+export default MainContainer
