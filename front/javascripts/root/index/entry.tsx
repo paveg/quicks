@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 import MainContainer from '../../components/main_container'
 
 function App() {
-    return <MainContainer/>
+    return <MainContainer />
 }
 
-export default App;
+export default App
